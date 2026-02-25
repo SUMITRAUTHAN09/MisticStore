@@ -6,7 +6,7 @@ import { motion } from "framer-motion"
 
 export default function Products() {
   return (
-    <main className="relative bg-black text-white min-h-screen py-24 overflow-hidden">
+    <main className="relative bg-black text-white min-h-screen py-24 overflow-hidden font-serif">
 
       {/* Golden Glow Background */}
       <div className="absolute -top-40 -left-40 w-[500px] h-[500px] bg-yellow-500 blur-[160px] opacity-10 rounded-full" />

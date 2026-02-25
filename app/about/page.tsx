@@ -5,7 +5,7 @@ import { motion } from "framer-motion"
 
 export default function About() {
   return (
-    <main className="relative min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white overflow-hidden">
+    <main className="relative min-h-screen bg-gradient-to-br from-black via-zinc-900 to-black text-white overflow-hidden font-serif">
 
       {/* Golden Glow Background Effects */}
       <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-yellow-500 rounded-full blur-[180px] opacity-20" />
@@ -29,7 +29,7 @@ export default function About() {
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 1 }}
         >
-          <Card className="rounded-3xl bg-white/5 backdrop-blur-xl border border-yellow-500/20 shadow-[0_0_60px_rgba(255,200,0,0.2)]">
+          <Card className="rounded-3xl bg-white/5 backdrop-blur-xl border border-yellow-500/20 shadow-[0_0_60px_rgba(255,200,0,0.2)] ">
             <CardContent className="p-12 space-y-8 text-lg leading-relaxed text-zinc-200">
 
               <p>

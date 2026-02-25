@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Footer() {
   return (
-    <footer className="relative bg-black text-zinc-300 border-t border-yellow-500/20 overflow-hidden">
+    <footer className="relative bg-black text-zinc-300 border-t border-yellow-500/20 overflow-hidden font-serif">
 
       {/* Golden Glow Effects */}
       <div className="absolute -top-32 -right-32 w-72 h-72 bg-yellow-500 blur-[140px] opacity-10 rounded-full" />
@@ -47,18 +47,58 @@ export default function Footer() {
         </motion.div>
 
         {/* Contact */}
-        <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 1 }}
-        >
-          <h3 className="font-semibold mb-4 text-yellow-400">
-            Contact
-          </h3>
+       {/* Contact */}
+<motion.div
+  initial={{ opacity: 0, y: 20 }}
+  whileInView={{ opacity: 1, y: 0 }}
+  transition={{ duration: 1 }}
+>
+  <h3 className="font-semibold mb-4 text-yellow-400">
+    Contact
+  </h3>
 
-          <p className="text-sm">WhatsApp: +91 9999999999</p>
-          <p className="text-sm mt-2">Email: yourgmail@gmail.com</p>
-        </motion.div>
+  <div className="flex items-center gap-3 text-sm">
+    {/* Phone Icon */}
+    <svg
+      className="w-4 h-4 text-yellow-400"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.32 1.76.59 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.11a2 2 0 0 1 2.11-.45c.83.27 1.7.47 2.59.59A2 2 0 0 1 22 16.92z" />
+    </svg>
+
+    <a href="tel:+919208137401" className="hover:text-yellow-400 transition">
+      +91 9208137401
+    </a>
+  </div>
+
+  <div className="flex items-center gap-3 text-sm mt-3">
+    {/* Email Icon */}
+    <svg
+      className="w-4 h-4 text-yellow-400"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      strokeWidth="2"
+      strokeLinecap="round"
+      strokeLinejoin="round"
+    >
+      <path d="M4 4h16v16H4z"/>
+      <path d="M22 6l-10 7L2 6"/>
+    </svg>
+
+    <a
+      href="mailto:agarwalnimish428@gmail.com"
+      className="hover:text-yellow-400 transition"
+    >
+      agarwalnimish428@gmail.com
+    </a>
+  </div>
+</motion.div>
 
       </div>
 

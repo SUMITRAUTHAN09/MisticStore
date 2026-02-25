@@ -6,7 +6,7 @@ import Link from "next/link"
 
 export default function Hero() {
   return (
-    <section className="relative overflow-hidden bg-black text-white py-32">
+    <section className="relative overflow-hidden bg-black text-white py-32 font-serif">
 
       {/* Golden Glow Effects */}
       <div className="absolute -top-40 -right-40 w-[500px] h-[500px] bg-yellow-500 blur-[160px] opacity-10 rounded-full" />
@@ -23,12 +23,12 @@ export default function Hero() {
         >
 
           {/* Premium M Logo */}
-          <div className="flex items-center gap-4">
-            <div className="text-7xl font-extrabold bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent">
+          <div className="flex items-center">
+            <div className="text-9xl font-extrabold bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent">
               M
             </div>
             <h1 className="text-5xl md:text-6xl font-bold tracking-tight">
-              Mistic
+              istic
             </h1>
           </div>
 
@@ -56,10 +56,10 @@ export default function Hero() {
               asChild
               size="lg"
               variant="outline"
-              className="border-yellow-500 text-yellow-400 hover:bg-yellow-500/10"
+              className="border-yellow-500 text-yellow-400 hover:bg-yellow-500/10 hover:text-white"
             >
               <a
-                href="https://wa.me/919999999999"
+                href="https://wa.me/9208137401"
                 target="_blank"
               >
                 Order on WhatsApp
@@ -76,7 +76,7 @@ export default function Hero() {
           className="relative"
         >
           <img
-            src="/hero-dhoop.jpg"
+            src="/image.png"
             alt="Mistic Dhoop Agarbatti"
             className="rounded-3xl shadow-[0_20px_80px_rgba(255,215,0,0.15)] object-cover h-[480px] w-full border border-yellow-500/20"
           />

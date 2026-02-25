@@ -27,7 +27,7 @@ export default function ProductCard({
       >
         <Card className="bg-black border border-yellow-500/20 rounded-3xl overflow-hidden 
                          shadow-lg hover:shadow-[0_20px_60px_rgba(255,215,0,0.15)] 
-                         transition duration-300 cursor-pointer">
+                         transition duration-300 cursor-pointer font-serif">
 
           <CardHeader className="p-0 relative">
             <img

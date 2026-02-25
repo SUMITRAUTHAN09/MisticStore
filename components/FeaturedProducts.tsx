@@ -9,18 +9,18 @@ export default function FeaturedProducts() {
   const featured = [
     {
       name: "Rose Dhoop",
-      image: "/rose1.jpg",
+      image: "/rose1.png",
       description: "Long lasting rose fragrance.",
     },
     {
       name: "Chandan Agarbatti",
-      image: "/chandan1.jpg",
+      image: "/chandan1.png",
       description: "Premium sandalwood aroma.",
     },
   ]
 
   return (
-    <section className="relative py-24 bg-black text-white overflow-hidden">
+    <section className="relative py-24 bg-black text-white overflow-hidden font-serif">
 
       {/* Golden Glow Background */}
       <div className="absolute -top-32 -left-32 w-[400px] h-[400px] bg-yellow-500 blur-[160px] opacity-10 rounded-full" />
@@ -61,7 +61,7 @@ export default function FeaturedProducts() {
                 </CardHeader>
 
                 <CardContent className="p-6 space-y-4">
-                  <h3 className="text-2xl font-semibold tracking-wide">
+                  <h3 className="text-2xl font-serif tracking-wide text-white">
                     {product.name}
                   </h3>
                   <p className="text-zinc-400">

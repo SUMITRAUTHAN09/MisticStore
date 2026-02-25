@@ -34,7 +34,7 @@ export default function Navbar() {
       initial={{ y: 0 }}
       animate={{ y: visible ? 0 : -100 }}
       transition={{ duration: 0.4 }}
-      className="fixed w-full top-0 z-50 backdrop-blur-xl bg-black/70 border-b border-yellow-500/20"
+      className="fixed w-full top-0 z-50 backdrop-blur-xl bg-black/70 border-b border-yellow-500/20 font-serif"
     >
       <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
 
@@ -56,7 +56,7 @@ export default function Navbar() {
             className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold hover:opacity-90 shadow-lg shadow-yellow-500/20"
           >
             <a
-              href="https://wa.me/919999999999"
+              href="https://wa.me/9208137401"
               target="_blank"
             >
               WhatsApp
@@ -92,7 +92,7 @@ export default function Navbar() {
                 className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-semibold"
               >
                 <a
-                  href="https://wa.me/919999999999"
+                  href="https://wa.me/9208137401"
                   target="_blank"
                 >
                   WhatsApp

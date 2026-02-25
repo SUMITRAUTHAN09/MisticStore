@@ -5,10 +5,10 @@ export const products = [
     price: "₹120",
     description: "Long lasting rose fragrance for daily pooja.",
     images: [
-      "/rose1.jpg",
-      "/rose2.jpg",
-      "/rose3.jpg",
-      "/rose4.jpg",
+      "/rose1.png",
+      "/rose2.png",
+      "/rose3.png",
+      "/rose4.png",
     ],
   },
   {
@@ -17,10 +17,10 @@ export const products = [
     price: "₹150",
     description: "Premium sandalwood aroma.",
     images: [
-      "/chandan1.jpg",
-      "/chandan2.jpg",
-      "/chandan3.jpg",
-      "/chandan4.jpg",
+      "/chandan1.png",
+      "/chandan2.png",
+      "/chandan3.png",
+      "/chandan4.png",
     ],
   },
 ];
