@@ -36,14 +36,21 @@ export default function Navbar() {
       transition={{ duration: 0.4 }}
       className="fixed w-full top-0 z-50 backdrop-blur-xl bg-black/70 border-b border-yellow-500/20 font-serif"
     >
-      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
-
+      <div className="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center ">
+        
+       <div className=" w-full flex items-center gap-2">
+         <img
+                    src="/Logo.jpeg"
+                    alt="Comapny Logo"
+                    className="object-cover h-[50px] w-[50px] "
+                  />
         {/* Logo */}
         <Link href="/">
           <h1 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent">
             Mistic
           </h1>
         </Link>
+       </div>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-zinc-200">

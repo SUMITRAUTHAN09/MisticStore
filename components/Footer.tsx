@@ -19,10 +19,16 @@ export default function Footer() {
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6 }}
-        >
+        ><div className="flex items-center gap-2">
+           <img
+                    src="/Logo.jpeg"
+                    alt="Comapny Logo"
+                    className="object-cover h-[50px] w-[50px] "
+                  />
           <h2 className="text-2xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent">
             Mistic
           </h2>
+        </div>
           <p className="mt-4 text-zinc-400 leading-relaxed">
             Premium Dhoop & Agarbatti crafted with devotion,
             purity and timeless tradition.
