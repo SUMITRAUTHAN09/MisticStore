@@ -40,27 +40,26 @@ export default function Navbar() {
     >
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
 
+        
         {/* Logo + Brand */}
-        <Link href="/" className="flex items-center gap-3 group">
-          {/* Logo image — use the uploaded logo as /Logo.jpeg in public/ */}
-          <div className="relative">
-            <div className="absolute inset-0 rounded-full bg-yellow-400/20 blur-md group-hover:bg-yellow-400/35 transition-all duration-300" />
-            <img
-              src="/logo.jpeg"
-              alt="MISTIC Logo"
-              className="relative h-[46px] w-[46px] object-contain rounded-full border border-yellow-500/30"
-            />
-          </div>
-          {/* Brand name */}
-          <div className="flex flex-col leading-none">
-            <span className="text-xl font-extrabold tracking-[0.15em] bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent uppercase">
-              MISTIC
-            </span>
-            <span className="text-[9px] tracking-[0.4em] text-yellow-500/60 uppercase font-sans font-medium">
-              Dhoop & Agarbatti
-            </span>
-          </div>
-        </Link>
+<Link href="/" className="flex items-center gap-3 group">
+  <div className="relative">
+    <div className="absolute inset-0 bg-amber-400/10 blur-xl group-hover:bg-amber-400/20 transition-all duration-300 rounded-full" />
+    <img
+  src="/logo.png"
+  alt="MISTIC Logo"
+  className="relative h-[52px] w-[52px] object-contain drop-shadow-[0_0_8px_rgba(212,160,26,0.5)]"
+/>
+  </div>
+  <div className="flex flex-col leading-none">
+    <span className="text-xl font-extrabold tracking-[0.15em] bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent uppercase">
+      MISTIC
+    </span>
+    <span className="text-[9px] tracking-[0.4em] text-yellow-500/60 uppercase font-sans font-medium">
+      Dhoop &amp; Agarbatti
+    </span>
+  </div>
+</Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-zinc-200">

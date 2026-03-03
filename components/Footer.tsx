@@ -23,7 +23,7 @@ export default function Footer() {
             <div className="relative">
               <div className="absolute inset-0 rounded-full bg-yellow-400/20 blur-md" />
               <img
-                src="/logo.jpeg"
+                src="/logo.png"
                 alt="MISTIC Logo"
                 className="relative h-[48px] w-[48px] object-contain rounded-full border border-yellow-500/30"
               />
