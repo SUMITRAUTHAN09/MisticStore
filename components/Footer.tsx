@@ -77,6 +77,14 @@ export default function Footer() {
               </span>
               +91 9208137401
             </a>
+             <a href="tel:+918864854298" className="flex items-center gap-3 text-sm text-zinc-400 hover:text-yellow-400 transition duration-300 font-sans group">
+              <span className="w-8 h-8 rounded-full border border-yellow-500/20 flex items-center justify-center group-hover:border-yellow-500/50 transition duration-300">
+                <svg className="w-3.5 h-3.5 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+                  <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.86 19.86 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.86 19.86 0 0 1 2.08 4.18 2 2 0 0 1 4.06 2h3a2 2 0 0 1 2 1.72c.12.89.32 1.76.59 2.59a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.49-1.11a2 2 0 0 1 2.11-.45c.83.27 1.7.47 2.59.59A2 2 0 0 1 22 16.92z" />
+                </svg>
+              </span>
+              +91 8864854298
+            </a>
             <a href="mailto:agarwalnimish428@gmail.com" className="flex items-center gap-3 text-sm text-zinc-400 hover:text-yellow-400 transition duration-300 font-sans group">
               <span className="w-8 h-8 rounded-full border border-yellow-500/20 flex items-center justify-center group-hover:border-yellow-500/50 transition duration-300">
                 <svg className="w-3.5 h-3.5 text-yellow-500" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
