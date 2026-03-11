@@ -1,7 +1,7 @@
 "use client"
 
-import Link from "next/link"
 import { products } from "@/lib/products"
+import Link from "next/link"
 import { useState } from "react"
 
 const flavours = ["All", "Kesar Chandan", "Guggle", "Black Bela"] as const
@@ -29,7 +29,7 @@ export default function Products() {
         <div className="text-center mb-12">
           <div className="flex items-center justify-center gap-4 mb-4">
             <div className="h-px w-16 bg-gradient-to-r from-transparent to-amber-500/50" />
-            <span className="text-amber-500/60 text-[10px] tracking-[0.45em] uppercase font-sans">MISTIC</span>
+            <span className="text-amber-500/60 text-[10px] tracking-[0.45em] uppercase font-sans">Mehkao</span>
             <div className="h-px w-16 bg-gradient-to-l from-transparent to-amber-500/50" />
           </div>
           <h1 className="text-4xl md:text-5xl font-bold bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent mb-3">

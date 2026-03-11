@@ -47,13 +47,13 @@ export default function Navbar() {
     <div className="absolute inset-0 bg-amber-400/10 blur-xl group-hover:bg-amber-400/20 transition-all duration-300 rounded-full" />
     <img
   src="/logo.png"
-  alt="MISTIC Logo"
+  alt="MEHKAO Logo"
   className="relative h-[52px] w-[52px] object-contain drop-shadow-[0_0_8px_rgba(212,160,26,0.5)]"
 />
   </div>
   <div className="flex flex-col leading-none">
     <span className="text-xl font-extrabold tracking-[0.15em] bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent uppercase">
-      MISTIC
+      MEHKAO
     </span>
     <span className="text-[9px] tracking-[0.4em] text-yellow-500/60 uppercase font-sans font-medium">
       Dhoop &amp; Agarbatti

@@ -20,7 +20,7 @@ export default function About() {
           transition={{ duration: 0.8 }}
           className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent"
         >
-          About Mistic
+          About Mehkao
         </motion.h1>
 
         {/* Animated Premium Card */}
@@ -33,7 +33,7 @@ export default function About() {
             <CardContent className="p-12 space-y-8 text-lg leading-relaxed text-zinc-200">
 
               <p>
-                <span className="text-yellow-400 font-semibold">Mistic</span> was founded
+                <span className="text-yellow-400 font-semibold">Mehkao</span> was founded
                 with the vision of bringing divine spiritual fragrance into every
                 home. We believe that fragrance is not just a scent — it is an
                 experience of peace, devotion, and positivity.
@@ -46,7 +46,7 @@ export default function About() {
               </p>
 
               <p>
-                At Mistic, we stand for purity, devotion, and uncompromising
+                At Mehkao, we stand for purity, devotion, and uncompromising
                 quality. Every stick we produce reflects our commitment to
                 excellence and customer satisfaction.
               </p>

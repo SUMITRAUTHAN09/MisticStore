@@ -16,11 +16,11 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mistic | Premium Dhoop & Agarbatti",
+  title: "Mehkao | Premium Dhoop & Agarbatti",
   description:
-    "Mistic offers premium quality dhoop and agarbatti crafted with devotion and purity. Order via WhatsApp or Email.",
+    "Mehkao offers premium quality dhoop and agarbatti crafted with devotion and purity. Order via WhatsApp or Email.",
   keywords: [
-    "Mistic",
+    "Mehkao",
     "Dhoop Agarbatti",
     "Incense Sticks",
     "Spiritual Products",

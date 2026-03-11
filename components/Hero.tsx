@@ -9,7 +9,7 @@ const slides = [
     image: "/dhoop-light.png",
     label: "The Sacred Ritual",
     headline: "Light the Divine",
-    sub: "Every flame carries a prayer. Let MISTIC dhoop carry yours.",
+    sub: "Every flame carries a prayer. Let MEHKAO dhoop carry yours.",
     accent: "from-amber-400 to-orange-500",
   },
   {
@@ -107,13 +107,13 @@ export default function Hero() {
               <div className="absolute inset-0 rounded-full bg-amber-400/20 blur-xl" />
               <img
                 src="/logo.png"
-                alt="MISTIC"
+                alt="MEHKAO"
                 className="relative h-[52px] w-[52px] object-contain drop-shadow-[0_0_8px_rgba(212,160,26,0.5)]"
               />
             </div>
             <div>
               <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-[0.12em] bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 bg-clip-text text-transparent uppercase leading-none">
-                MISTIC
+                MEHKOA
               </h1>
               <p className="text-[10px] tracking-[0.5em] text-amber-500/50 uppercase font-sans mt-1">
                 Dhoop &amp; Agarbatti

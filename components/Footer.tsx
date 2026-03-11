@@ -30,7 +30,7 @@ export default function Footer() {
             </div>
             <div>
               <h2 className="text-xl font-extrabold tracking-[0.12em] bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent uppercase">
-                MISTIC
+                MEHKAO
               </h2>
               <p className="text-[9px] tracking-[0.4em] text-yellow-500/50 uppercase font-sans">
                 Dhoop & Agarbatti
@@ -102,7 +102,7 @@ export default function Footer() {
       <Separator className="bg-yellow-500/20" />
 
       <div className="text-center py-6 text-xs text-zinc-600 font-sans tracking-widest uppercase">
-        &copy; {new Date().getFullYear()} MISTIC. All rights reserved.
+        &copy; {new Date().getFullYear()} MEHKAO. All rights reserved.
       </div>
     </footer>
   )
