@@ -1,7 +1,13 @@
 "use client"
 
-import { Card, CardContent } from "@/components/ui/card"
-import { motion } from "framer-motion"
+import { Card, CardContent } from "@/components/ui/card";
+import { motion } from "framer-motion";
+import { Cinzel_Decorative } from "next/font/google";
+
+const mehkaoFont = Cinzel_Decorative({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 export default function About() {
   return (
@@ -14,14 +20,14 @@ export default function About() {
       <div className="relative max-w-5xl mx-auto px-6 py-24">
 
         {/* Animated Heading */}
-        <motion.h1
-          initial={{ opacity: 0, y: -40 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          className="text-5xl font-bold text-center mb-16 bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-500 bg-clip-text text-transparent"
-        >
-          About Mehkao
-        </motion.h1>
+     <motion.h1
+  initial={{ opacity: 0, y: -40 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ duration: 0.8 }}
+  className={`${mehkaoFont.className} text-4xl md:text-5xl text-center mb-16 tracking-[0.22em] uppercase bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 bg-clip-text text-transparent drop-shadow-[0_0_10px_rgba(255,180,60,0.35)]`}
+>
+  ABOUT MEHKAO
+</motion.h1>
 
         {/* Animated Premium Card */}
         <motion.div

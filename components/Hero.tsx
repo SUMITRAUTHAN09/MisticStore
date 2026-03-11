@@ -1,8 +1,14 @@
 "use client";
 
 import { Button } from "@/components/ui/button";
+import { Cinzel_Decorative } from "next/font/google";
 import Link from "next/link";
 import { useEffect, useState } from "react";
+
+const mehkaoFont = Cinzel_Decorative({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 const slides = [
   {
@@ -112,7 +118,9 @@ export default function Hero() {
               />
             </div>
             <div>
-              <h1 className="text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-[0.12em] bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 bg-clip-text text-transparent uppercase leading-none">
+              <h1
+                className={`${mehkaoFont.className} text-4xl md:text-5xl lg:text-6xl font-extrabold tracking-[0.12em] bg-gradient-to-r from-yellow-300 via-amber-400 to-orange-400 bg-clip-text text-transparent uppercase leading-none`}
+              >
                 MEHKAO
               </h1>
               <p className="text-[10px] tracking-[0.5em] text-amber-500/50 uppercase font-sans mt-1">

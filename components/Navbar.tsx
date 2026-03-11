@@ -1,31 +1,37 @@
-"use client"
+"use client";
 
-import { Button } from "@/components/ui/button"
-import { AnimatePresence, motion } from "framer-motion"
-import { Menu, X } from "lucide-react"
-import Link from "next/link"
-import { useEffect, useState } from "react"
+import { Button } from "@/components/ui/button";
+import { AnimatePresence, motion } from "framer-motion";
+import { Menu, X } from "lucide-react";
+import { Cinzel_Decorative } from "next/font/google";
+import Link from "next/link";
+import { useEffect, useState } from "react";
+
+const mehkaoFont = Cinzel_Decorative({
+  subsets: ["latin"],
+  weight: ["700"],
+});
 
 export default function Navbar() {
-  const [isOpen, setIsOpen] = useState(false)
-  const [visible, setVisible] = useState(true)
-  const [lastScrollY, setLastScrollY] = useState(0)
-  const [scrolled, setScrolled] = useState(false)
+  const [isOpen, setIsOpen] = useState(false);
+  const [visible, setVisible] = useState(true);
+  const [lastScrollY, setLastScrollY] = useState(0);
+  const [scrolled, setScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
-      const currentScrollY = window.scrollY
-      setScrolled(currentScrollY > 40)
+      const currentScrollY = window.scrollY;
+      setScrolled(currentScrollY > 40);
       if (currentScrollY > lastScrollY && currentScrollY > 80) {
-        setVisible(false)
+        setVisible(false);
       } else {
-        setVisible(true)
+        setVisible(true);
       }
-      setLastScrollY(currentScrollY)
-    }
-    window.addEventListener("scroll", handleScroll)
-    return () => window.removeEventListener("scroll", handleScroll)
-  }, [lastScrollY])
+      setLastScrollY(currentScrollY);
+    };
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, [lastScrollY]);
 
   return (
     <motion.nav
@@ -39,27 +45,27 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 py-3 flex justify-between items-center">
-
-        
         {/* Logo + Brand */}
-<Link href="/" className="flex items-center gap-3 group">
-  <div className="relative">
-    <div className="absolute inset-0 bg-amber-400/10 blur-xl group-hover:bg-amber-400/20 transition-all duration-300 rounded-full" />
-    <img
-  src="/logo.png"
-  alt="MEHKAO Logo"
-  className="relative h-[52px] w-[52px] object-contain drop-shadow-[0_0_8px_rgba(212,160,26,0.5)]"
-/>
-  </div>
-  <div className="flex flex-col leading-none">
-    <span className="text-xl font-extrabold tracking-[0.15em] bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent uppercase">
-      MEHKAO
-    </span>
-    <span className="text-[9px] tracking-[0.4em] text-yellow-500/60 uppercase font-sans font-medium">
-      Dhoop &amp; Agarbatti
-    </span>
-  </div>
-</Link>
+        <Link href="/" className="flex items-center gap-3 group">
+          <div className="relative">
+            <div className="absolute inset-0 bg-amber-400/10 blur-xl group-hover:bg-amber-400/20 transition-all duration-300 rounded-full" />
+            <img
+              src="/logo.png"
+              alt="MEHKAO Logo"
+              className="relative h-[52px] w-[52px] object-contain drop-shadow-[0_0_8px_rgba(212,160,26,0.5)]"
+            />
+          </div>
+          <div className="flex flex-col leading-none">
+            <span
+              className={`${mehkaoFont.className} text-xl font-extrabold tracking-[0.15em] bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent uppercase`}
+            >
+              MEHKAO
+            </span>
+            <span className="text-[9px] tracking-[0.4em] text-yellow-500/60 uppercase font-sans font-medium">
+              Dhoop &amp; Agarbatti
+            </span>
+          </div>
+        </Link>
 
         {/* Desktop Menu */}
         <div className="hidden md:flex items-center gap-8 text-zinc-200">
@@ -96,9 +102,15 @@ export default function Navbar() {
             className="md:hidden bg-black/95 backdrop-blur-xl border-t border-yellow-500/20"
           >
             <div className="flex flex-col px-6 py-6 gap-6 text-zinc-200">
-              <NavLink href="/" onClick={() => setIsOpen(false)}>Home</NavLink>
-              <NavLink href="/products" onClick={() => setIsOpen(false)}>Products</NavLink>
-              <NavLink href="/about" onClick={() => setIsOpen(false)}>About</NavLink>
+              <NavLink href="/" onClick={() => setIsOpen(false)}>
+                Home
+              </NavLink>
+              <NavLink href="/products" onClick={() => setIsOpen(false)}>
+                Products
+              </NavLink>
+              <NavLink href="/about" onClick={() => setIsOpen(false)}>
+                About
+              </NavLink>
               <Button
                 asChild
                 className="bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-bold font-sans"
@@ -112,7 +124,7 @@ export default function Navbar() {
         )}
       </AnimatePresence>
     </motion.nav>
-  )
+  );
 }
 
 function NavLink({
@@ -120,9 +132,9 @@ function NavLink({
   children,
   onClick,
 }: {
-  href: string
-  children: React.ReactNode
-  onClick?: () => void
+  href: string;
+  children: React.ReactNode;
+  onClick?: () => void;
 }) {
   return (
     <Link
@@ -133,5 +145,5 @@ function NavLink({
       {children}
       <span className="absolute left-0 -bottom-1 w-0 h-[1.5px] bg-gradient-to-r from-yellow-400 to-orange-400 transition-all duration-300 group-hover:w-full rounded-full" />
     </Link>
-  )
+  );
 }
